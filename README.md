@@ -1,3 +1,12 @@
+I want to build a python simulator program similar to the concept of an open world game. In the simulation, the simulation engine itself doesn't have predefined variables or entities, but simply updates the time of simulated world. And I want an interactive interface to play in this simulation engine (like a webUI). Any entity is allowed to spawn in this world, with arbitrary attributes and interaction logic with the world or other entities. Is such a program possible?
+
+
+I also want distributed async computing for any new entities added so the world doesn't run in a single thread. Is it possible? I want to simulate the real world
+
+
+
+
+
 Yes, it's absolutely possible to build a distributed, asynchronous simulation engine that can handle new entities dynamically and simulate a real-world-like environment. This approach will allow you to scale the simulation across multiple threads, processes, or even machines, ensuring that the world doesn't run in a single thread and can handle a large number of entities efficiently.
 
 Here’s how you can achieve this:
